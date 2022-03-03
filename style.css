@@ -159,6 +159,32 @@ form input{
 }
 
 
+/* footer  */
+footer{
+    height: 320px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.4) ;
+    position: absolute;
+    top:300%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact{
+    width: 100%;
+    height: 250px;
+    background-color: red;
+}
+.foot{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
 
 /* Hamburger Menu */
 .menu-toggle{
@@ -224,7 +250,7 @@ form input{
 @media only screen and (max-width: 768px) {
 
     nav{
-        width: 100%;
+        width: 115%;
         justify-content: right;
     }
     .active{
@@ -238,7 +264,7 @@ form input{
     nav ul {
         position: absolute;
         margin-top: 70px;
-        right: -100px;
+        right: -0px;
         top: -20px;
         flex-direction: column;
         height: 200px;
@@ -267,6 +293,7 @@ form input{
     .menu-toggle {
         display: flex;
         margin-top: 10px;
+        margin-right: 45px;
 
     }
 
@@ -294,6 +321,10 @@ form input{
     }
     .img-content{
         width: 100%;
+    }
+
+    footer{
+        top: 720%;
     }
     
 

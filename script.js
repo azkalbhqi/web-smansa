@@ -15,3 +15,19 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycby8q2qdcFNZ8St3Z3Wh2I
       .catch(error => console.error('Error!', error.message))
   })
 
+  var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  var alertTrigger = document.getElementById('liveAlertBtn')
+  
+  function alert(message, type) {
+    var wrapper = document.createElement('div')
+    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  
+    alertPlaceholder.append(wrapper)
+  }
+  
+  if (alertTrigger) {
+    alertTrigger.addEventListener('click', function () {
+      alert('Aspirasi anda sudah terekam! Terimakasih', 'success')
+    })
+  }
+
